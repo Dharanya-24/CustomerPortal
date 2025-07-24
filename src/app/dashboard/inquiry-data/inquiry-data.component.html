@@ -1,0 +1,45 @@
+<div class="inquiry-container" *ngIf="inquiryData && inquiryData.length > 0; else noData">
+  <h2 class="title">Inquiry Data</h2>
+
+  <table class="inquiry-table">
+    <thead>
+      <tr>
+        <th>Inquiry No</th>
+        <th>Date</th>
+        <th>Sales Org</th>
+        <th>Material ID</th>
+        <th>Material Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of inquiryData">
+        <td>{{ item.INQUIRY_NO }}</td>
+        <td>{{ item.INQUIRY_DATE }}</td>
+        <td>{{ item.SALES_ORG }}</td>
+        <td>{{ item.MATERIAL_ID }}</td>
+        <td>{{ item.MATERIAL_DESCRIPTION }}</td>
+        <td>{{ item.QUANTITY }}</td>
+        <td>{{ item.PRICE }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="button-container">
+    <div class="button-container">
+  <button class="dashboard-btn" routerLink="/dashboard/sales-data">← Go to Sales Data</button>
+</div>
+
+  </div>
+</div>
+
+<ng-template #noData>
+  <div class="no-data-box">
+    <p>No inquiry data found for this customer.</p>
+    <div class="button-container">
+  <button class="dashboard-btn" routerLink="/dashboard/sales-data">← Go to Sales Data</button>
+</div>
+
+  </div>
+</ng-template>

@@ -1,0 +1,46 @@
+.delivery-container {
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+}
+
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.delivery-table th,
+.delivery-table td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.delivery-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.go-back-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.go-back-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.go-back-btn:hover {
+  background-color: #0056b3;
+}

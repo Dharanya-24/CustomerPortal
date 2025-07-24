@@ -1,0 +1,42 @@
+<div class="delivery-container">
+  <h2>🚚 List of Deliveries</h2>
+
+  <table *ngIf="deliveryData.length > 0" border="1" class="delivery-table">
+    <thead>
+      <tr>
+        <th>Delivery No</th>
+        <th>Delivered Date</th>
+        <th>Sales Order</th>
+        <th>Material No</th>
+        <th>Material Description</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+        <th>Net_price</th>
+        <th>Amount</th>
+        <th>Currency</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of deliveryData">
+        <td>{{ item.DELIVERY_NO }}</td>
+        <td>{{ item.DELIVERY_DATE }}</td>
+        <td>{{ item.SALESORDER_NO }}</td>
+        <td>{{ item.MATERIAL_NO }}</td>
+        <td>{{ item.MATERIAL_DESCRIPTION }}</td>
+        <td>{{ item.QUANTITY }}</td>
+        <td>{{ item.SALES_UNIT }}</td>
+        <td>{{ item.NET_PRICE }}</td>
+        <td>{{ item.AMOUNT }}</td>
+        <td>{{ item.CURRENCY }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p *ngIf="deliveryData.length === 0">No delivery data available.</p>
+</div>
+
+<div class="go-back-container">
+  <button class="go-back-btn" routerLink="/dashboard/sales-data">
+    ⬅ Go Back to Sales Data
+  </button>
+</div>

@@ -1,0 +1,23 @@
+<div class="dashboard-container">
+  <div class="dashboard-header">
+    <div class="welcome-text">Welcome, Customer!</div>
+    <div class="header-actions">
+      <button class="icon-btn" (click)="goToProfile()" title="View Profile">
+        👤
+      </button>
+      <button (click)="logout()" class="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <div class="dashboard-content">
+    <h2 class="main-message">Glad to see you back!</h2>
+
+    <div class="sales-box-container">
+      <button class="dashboard-button" routerLink="/dashboard/sales-data">
+        📊 Sales Data
+      </button>
+    </div>
+  </div>
+</div>
+
+

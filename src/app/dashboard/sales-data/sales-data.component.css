@@ -1,0 +1,60 @@
+.sales-data-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  color: #003366;
+  max-width: 800px;
+  margin: auto;
+}
+
+.sales-data-container h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sales-section {
+  border: 1px solid #cce5ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f0f8ff;
+}
+.sales-section h3 {
+  color: #004085;
+}
+
+.section-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.sales-boxes-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+}
+
+.sales-boxes-wrapper:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-btn {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0 20px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+  background-color: #005fa3;
+}

@@ -1,0 +1,72 @@
+.inquiry-container {
+  padding: 30px;
+  background-color: #f8fbff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+  margin: 30px auto;
+  max-width: 95%;
+}
+
+.title {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.inquiry-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.inquiry-table th, .inquiry-table td {
+  padding: 12px 14px;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.inquiry-table thead {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.inquiry-table tbody tr:nth-child(even) {
+  background-color: #f1f6ff;
+}
+
+.inquiry-table tbody tr:hover {
+  background-color: #e2ecfb;
+  transition: 0.3s;
+}
+
+.button-container {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.dashboard-btn {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+  background-color: #0b5ed7;
+}
+
+.no-data-box {
+  text-align: center;
+  padding: 50px;
+  background-color: #eef4ff;
+  border-radius: 12px;
+  margin: 50px;
+}
