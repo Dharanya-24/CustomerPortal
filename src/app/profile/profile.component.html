@@ -1,0 +1,23 @@
+<div class="profile-container" *ngIf="profileData">
+  <div class="profile-header">
+    <div class="profile-logo">
+      👤
+    </div>
+    <p class="sub-title">Customer Profile</p>
+  </div>
+
+  <div class="profile-details">
+    <div class="profile-field"><strong>Customer ID:</strong> {{ profileData.customerId }}</div>
+    <div class="profile-field"><strong>Customer Name:</strong> {{ profileData.name }}</div>
+    <div class="profile-field"><strong>City:</strong> {{ profileData.city }}</div>
+    <div class="profile-field"><strong>Postal Code:</strong> {{ profileData.postalCode }}</div>
+    <div class="profile-field"><strong>Country:</strong> {{ profileData.country }}</div>
+  </div>
+
+  <div class="back-button-container">
+    <button class="back-button" (click)="goToDashboard()">⬅️ Back to Dashboard</button>
+  </div>
+</div>
+
+
+
