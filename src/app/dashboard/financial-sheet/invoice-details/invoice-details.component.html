@@ -1,0 +1,30 @@
+<div *ngIf="invoices.length > 0">
+  <h2>Invoice Details for {{ customerId }}</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Invoice No</th>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Sales Org</th>
+        <th>Item</th>
+        <th>PDF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let invoice of invoices">
+        <td>{{ invoice.invoiceNumber }}</td>
+        <td>{{ invoice.invoiceDate }}</td>
+        <td>{{ invoice.amount }}</td>
+        <td>{{ invoice.salesOrg }}</td>
+        <td>{{ invoice.item }}</td>
+        <td>
+          <button (click)="downloadPDF(invoice.file)">Download</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="errorMessage">{{ errorMessage }}</div>
+

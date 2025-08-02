@@ -1,0 +1,34 @@
+<div class="financial-sheet-container">
+  <h2>💼 Financial Sheet</h2>
+
+  <!-- Back to Dashboard Button -->
+  <button class="dashboard-btn" routerLink="/dashboard">⬅ Go to Dashboard</button>
+
+  <div class="financial-boxes-wrapper">
+    <!-- Invoice Details -->
+    <a routerLink="invoice-details" class="section-link">
+      <div class="financial-section">
+        <h3>🧾 Invoice Details</h3>
+        <p>View all invoice documents and download them.</p>
+      </div>
+    </a>
+
+    <!-- Payment & Aging -->
+    <a routerLink="payment-aging" class="section-link">
+      <div class="financial-section">
+        <h3>💸 Payment & Aging</h3>
+        <p>Analyze payment status and outstanding amounts.</p>
+      </div>
+    </a>
+
+    <!-- Credit/Debit Memo -->
+    <a routerLink="credit-debit-memo" class="section-link">
+      <div class="financial-section">
+        <h3>📉 Credit/Debit Memo</h3>
+        <p>Review all credit and debit memos issued.</p>
+      </div>
+    </a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
