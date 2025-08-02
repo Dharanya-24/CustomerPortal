@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { fetchSalesOrderData } = require('../controllers/salesOrderController');
+const { getSalesOrderData } = require('../controllers/salesOrderController');
 
-router.get('/sales-order/:customerId', fetchSalesOrderData);
+router.get('/:customerId', getSalesOrderData);
 
 module.exports = router;
